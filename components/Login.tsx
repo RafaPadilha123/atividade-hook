@@ -33,7 +33,6 @@ const Login: React.FC = () => {
       />
       <Button title="Login" onPress={handleLogin} />
       
-      <Button title="Print Values" onPress={handlePrintValues} />
     </View>
   );
 };
