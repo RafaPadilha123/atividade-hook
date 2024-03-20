@@ -11,11 +11,6 @@ const Login: React.FC = () => {
     console.log('Password:', password);
   };
 
-  const handlePrintValues = () => {
-    console.log('Username:', username);
-    console.log('Password:', password);
-  };
-
   return (
     <View>
       <TextInput
@@ -29,6 +24,7 @@ const Login: React.FC = () => {
         onChangeText={setPassword}
         placeholder="Enter your password"
         secureTextEntry={true}
+        keyboardType="numeric"
         style={{ borderWidth: 1, borderColor: 'gray', marginBottom: 10, padding: 5 }}
       />
       <Button title="Login" onPress={handleLogin} />
